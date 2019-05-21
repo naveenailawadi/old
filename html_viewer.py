@@ -6,8 +6,8 @@ import requests
 
 def html_viewer():
     # get the site
-    website = str(input('What article do you want to read? \
-Paste the link below. \n'))
+    website = str(input('What HTML tree do you want to view? \
+Paste the URL below. \n'))
 
     # name the site
     name = str(input('What do you want to call it?\n'))
