@@ -8,3 +8,5 @@ Paywall-Bypass FINAL provides a method to read articles on popular sites like Th
 wave_file_creator provides a simple method to record .wav files. These do not become compressed and often preserve the audio quality.
 
 html_viewer is a simple program that writes the entire html tree onto a text file. 
+
+The prime number program can check or generate an infinite amount of prime numbers, one of the great mysteries of math.
