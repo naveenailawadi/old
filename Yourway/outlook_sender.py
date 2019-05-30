@@ -19,7 +19,7 @@ title = 'Premium Courier and Clinical Packaging'
 body = 'New meeting requested \n\
 I would like to introduce you to Yourway, the only true premium courier and clinical packager all in one company. We offer door to door service of any temp control shipment globally with now our own global GMP depot network with primary and secondary packaging, including short and long term storage of 15-25C, 2-8C, -20C and -80C and -180C and distribution. \n\
 Main facility headquartered in Allentown, Pennsylvania, we also operate 21 other strategically-located GMP depots worldwide. Yourway is a premium courier of time- and temperature-sensitive clinical materials, and offers integrated clinical packaging, storage, and other specialty services. \n\
-It would be a pleasure to formally introduce myself and tell you more, so I invite you to meet at BIO International, booth #4209. Do you have a good day/time? Or we could schedule a face-to-face that fits your schedule in the Partnering Forum? \n\n\'
+It would be a pleasure to formally introduce myself and tell you more, so I invite you to meet at BIO International, booth #4209. Do you have a good day/time? Or we could schedule a face-to-face that fits your schedule in the Partnering Forum? \n\n\ '
 
 
 driver = webdriver.Chrome()
