@@ -7,8 +7,8 @@ instead of sending a mass email. As a result, he provided me with a
 csv with these emails. This program will send a given body email
 with its title to each of the emails on the csv.
 
-**The username and password of the employer have been removed
-for security purposes**
+**The username and password of the employer have been replaced
+with inputs for security purposes**
 '''
 
 
