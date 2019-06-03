@@ -15,12 +15,16 @@ with inputs for security purposes**
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import math
 import pandas
 
 name = 'emails.csv'
 
 data = pandas.read_csv(name)
 email_list = data.email
+
+# count clients for later
+num_clients = len(email_list)
 
 # key_phrase = input('What category would you like to make requests in? (type a phrase below) \n')
 usr = input('What is the outlook username? \n')
@@ -85,6 +89,14 @@ def message_sender(recipient):
 
 
 home = 'https://mail.yourwaytransport.com/owa/'
+
+# print estimated time
+et = num_clients * 35
+minutes_raw = et / 60
+minutes = math.trunc(minutes_raw)
+seconds = et - (minutes * 60)
+print('It will take ' + str(minutes) + ' minutes and ' + str(seconds) + ' seconds \
+to send these emails.')
 
 for client in email_list:
     message_sender(client)
