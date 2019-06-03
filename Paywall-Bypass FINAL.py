@@ -1,5 +1,5 @@
 '''
-provides a method to read articles on popular sites like The Economist and The New York Times for free. 
+This script provides a method to read articles on popular sites like The Economist and The New York Times for free. 
 
 It can also be useful for sites that require turning off an adblocker.
 '''
