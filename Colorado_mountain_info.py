@@ -1,3 +1,10 @@
+'''
+This script accesses the opensnow database for information about mountains 
+that are both on the epic pass and near Summit County.
+
+It will then print your selection of either weather forecast, snow forecast, or snow report. 
+'''
+
 from bs4 import BeautifulSoup as bs
 import requests
 
