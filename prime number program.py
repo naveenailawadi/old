@@ -1,3 +1,12 @@
+'''
+One of the most elusive aspects of mathematics has been finding prime numbers. Many 
+mathmeticians have attempted to create a formula to generate prime numbers, but none 
+have succeeded. 
+
+This script will do exactly that. Furthermore, it will allow you to check if 
+any given number is prime. 
+'''
+
 def prime_number(x):
     print('running prime number check...')
     RANGE = list(range(2, x))
