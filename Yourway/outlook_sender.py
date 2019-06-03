@@ -1,3 +1,17 @@
+'''
+Yourway Transport is a biopharmaceutical company that deals with
+a vast amount of clientele. Often, the company organizes
+meetings with certain clients, but not all of them. 
+The CEO, Gulam Jaffer, prefers that each email be sent by itself
+instead of sending a mass email. As a result, he provided me with a 
+csv with these emails. This program will send a given body email
+with its title to each of the emails on the csv.
+
+**The username and password of the employer have been removed
+for security purposes**
+'''
+
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
