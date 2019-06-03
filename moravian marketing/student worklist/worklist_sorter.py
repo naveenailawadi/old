@@ -1,3 +1,14 @@
+'''
+Moravian Academy collects data about each and every student enrolled
+in the institution. For whatever reason, the administration did not
+like the way that their database sorted the data. Their problem
+was that both parents and their emails were in the same cell.
+The office prefered that each student had a new row for every parent. 
+This program iterates through the entire list and creates a new
+csv with the same data, but in the office's preferred format. 
+'''
+
+
 import pandas as pd
 import csv
 
