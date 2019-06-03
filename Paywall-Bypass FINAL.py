@@ -1,3 +1,9 @@
+'''
+provides a method to read articles on popular sites like The Economist and The New York Times for free. 
+
+It can also be useful for sites that require turning off an adblocker.
+'''
+
 from bs4 import BeautifulSoup as bs
 import requests
 from docx import Document
