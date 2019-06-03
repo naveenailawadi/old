@@ -1,3 +1,13 @@
+'''
+This program has been adapted from another programmer's github. 
+
+Wav files resist compression and keep audio at a higher quality. However,
+many applications that create wav files are difficult to use or outdated.
+This program simply records and stops recording. There are some other goodies 
+built in. If you understand them, a minor change to the script can use them.
+'''
+
+
 import pyaudio
 import wave
 import time
