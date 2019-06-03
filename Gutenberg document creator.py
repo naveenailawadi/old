@@ -1,3 +1,9 @@
+'''
+This script can transfer any book in the Gutenberg Library into a word file.
+
+The Gutenberg Library is a free online source for books that have expired copyrights. 
+'''
+
 from bs4 import BeautifulSoup as bs
 import requests
 from docx import Document
