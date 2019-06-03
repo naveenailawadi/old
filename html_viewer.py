@@ -1,4 +1,4 @@
-# The HTML Viewer
+# This will show you the html tree of any website
 
 from bs4 import BeautifulSoup as bs
 import requests
