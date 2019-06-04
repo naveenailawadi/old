@@ -60,9 +60,9 @@ time.sleep(3)
 
 def message_sender(recipient):
     dropdown = driver.find_element_by_xpath("//a[@id='newmsgcd']")
-    time.sleep(1)
+    time.sleep(2)
     dropdown.click()
-    time.sleep(1)
+    time.sleep(2)
     message_selection = driver.find_element_by_xpath("//a[@id='newmsg']")
     time.sleep(2)
     message_selection.click()
@@ -79,7 +79,7 @@ def message_sender(recipient):
     time.sleep(5)
     body_box = driver.find_element_by_xpath("//iframe[@id='ifBdy']")
     body_box.send_keys(body)
-    time.sleep(10)
+    time.sleep(7)
     send_button = driver.find_element_by_xpath("//div[@id='divToolbarButtonsend']")
     send_button.click()
     time.sleep(3)
@@ -91,7 +91,7 @@ def message_sender(recipient):
 home = 'https://mail.yourwaytransport.com/owa/'
 
 # print estimated time
-et = num_clients * 35
+et = num_clients * 39
 minutes_raw = et / 60
 minutes = math.trunc(minutes_raw)
 seconds = et - (minutes * 60)
