@@ -20,28 +20,14 @@ email_list = data.email
 num_clients = len(email_list)
 
 # basic login information etc.
-usr = 'yourway/gulam'
-pwd = 'takeda110'
+usr = input('What is your username? \n')
+pwd = input('What is your password? \n')
 
 url = 'https://mail.yourwaytransport.com/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.yourwaytransport.com%2fowa%2f'
 
-title = 'Premium Courier and Clinical Packaging'
+title = input('What is the subject of your email?')
 
-body = 'New meeting requested\n\n\
-I would like to introduce you to Yourway, the only true premium courier and clinical packager all in one company. We offer door to door service of any temp control shipment globally with now our own global GMP depot network with primary and secondary packaging, including short and long term storage of 15-25C, 2-8C, -20C and -80C and -180C and distribution.\n\n\
-Main facility headquartered in Allentown, Pennsylvania, we also operate 21 other strategically-located GMP depots worldwide. Yourway is a premium courier of time- and temperature-sensitive clinical materials, and offers integrated clinical packaging, storage, and other specialty services.\n\n\
-It would be a pleasure to formally introduce myself and tell you more, so I invite you to meet at BIO International, booth #4209. Do you have a good day/time? Or we could schedule a face-to-face that fits your schedule in the Partnering Forum?\n\n\
-Sincerely,\n\n\
-Gulam Jaffer\n\
-President\n\
-Yourway Transport, Inc.\n\
-6681 Snowdrift Road\n\
-Allentown, PA 18106\n\
-610.395.9198 Main\n\
-610.391.9002 Fax\n\
-610.517.2320 Mobile\n\
-Email: jaffer@yourwaytransport.com\n\
-www.yourway.com'
+body = input('What is the body of your email? (use "\n" to separate paragraphs instead of tabs or returns)')
 
 # open webdriver
 driver = webdriver.Chrome()
