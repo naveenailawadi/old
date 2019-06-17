@@ -73,18 +73,14 @@ with open('backup.csv', "w") as f:
 print('backup list created. It is called "backup.csv" and is in the same folder as this program.')
 
 # necessary login and email information
-usr = 'yourway/gulam'
-pwd = 'takeda110'
+usr = input('What is your username? \n')
+pwd = input('What is your password? \n')
 
 url = 'https://mail.yourwaytransport.com/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.yourwaytransport.com%2fowa%2f'
 
-title = 'Yourway - Premium Courier and Clinical Packaging'
+title = input('What is the subject of your email?')
 
-body = 'New meeting requested\n\n\
-I would like to introduce you to Yourway, the only true premium courier and clinical packager all in one company. We offer door to door service of any temp control shipment globally with our own global GMP depot network with primary and secondary clinical packaging, including short and long term storage of 15-25C, 2-8C, -20C and -80C and -180C and distribution. \n\n\
-Main facility headquartered in Allentown, Pennsylvania, we also operate 20 other strategically-located GMP depots worldwide. Yourway is a premium courier of time- and temperature-sensitive clinical materials, and offers integrated clinical packaging, storage, and other specialty services. \n\n\
-It would be a pleasure to formally introduce myself and tell you more, so I invite you to meet us at The DIA Conference, booth #517. Do you have a good day/time for a meeting at our booth that fits your schedule? Look forward to hearing from you. \n\n\
-Thanks'
+body = input('What is the body of your email? (use "\n" to separate paragraphs instead of tabs or returns)')
 
 # open the webdriver
 driver = webdriver.Chrome()
