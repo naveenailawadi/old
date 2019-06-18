@@ -46,10 +46,10 @@ while True:
         print(duty_list)
     new_duty = input('Please enter a selected topic below. (if no more topics are desired, \
 type "break loop" to stop inputing.\n')
-    if new_duty.lower() not in duty_list:
-        duty_list.append(new_duty)
-    elif 'break loop' in new_duty:
+    if 'break loop' in new_duty:
         break
+    elif new_duty.lower() not in duty_list:
+        duty_list.append(new_duty)
     else:
         continue
 
