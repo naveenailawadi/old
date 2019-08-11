@@ -12,8 +12,6 @@ import math
 
 # raw gmail info
 url = 'https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
-# usr = input('What is the outlook username? \n')
-# pwd = input('What is the outlook password? \n')
 usr = input('What is your gmail username?')
 pwd = input('What is your password?')
 
