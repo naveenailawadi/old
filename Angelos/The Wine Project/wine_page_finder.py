@@ -28,7 +28,7 @@ while True:
 
     # Calculate new scroll height and compare with last scroll height
     new_height = driver.execute_script("return document.body.scrollHeight")
-    if len(driver.find_elements_by_xpath('//a[@class="anchor__anchor--2QZvA"]')) > 60000:
+    if len(driver.find_elements_by_xpath('//a[@class="anchor__anchor--2QZvA"]')) > 2000:
         break
     last_height = new_height
 
