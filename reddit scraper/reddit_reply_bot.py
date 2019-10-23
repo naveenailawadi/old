@@ -121,7 +121,7 @@ def contact_finder():
         print('scanning title \n\n')
         for cell in subreddit_posts_scraped:
             if title.lower() in cell[0].lower():
-                print(cell[0])
+                print(cell[0] + ' - ' + str(cell[2]))
                 try:
                     print(cell[4])
                 except UnicodeEncodeError:
