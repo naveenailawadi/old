@@ -1,0 +1,1 @@
+{"keyword": "Second Test", "message": "Hey Leo", "winphrase": "Hi", "winner_subject": "You won", "winner_message": "JK This is just a test", "max_winners": 1, "max_calls": "1000", "game_over_message": "Game finished"}
