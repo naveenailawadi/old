@@ -1,9 +1,17 @@
+
+'''
+At some point, I get annoyed with having so many separate PDF
+files and being unable to put them together, so I used the PyPDF
+library to build a program to put them together.
+'''
+
+# import necessary modules
 try:
     from PyPDF2 import PdfFileReader, PdfFileWriter
 except ImportError:
     from pyPdf import PdfFileReader, PdfFileWriter
 
-
+# puts together PDFs
 def pdf_cat(input_files, output_file):
     input_streams = []
     output_stream = open(output_file, 'wb')
@@ -24,9 +32,10 @@ def pdf_cat(input_files, output_file):
         for f in input_streams:
             f.close()
 
-
+# create a list of pdf filepaths
 input_files = []
 
+# prompt for filepaths
 while True:
     new_file = input('Enter a file that you want to join below: \n\
 otherwise, write "I am done") \n')
@@ -42,4 +51,5 @@ new_file_name = input('What would you like to call your new file? \n')
 if '.pdf' not in new_file_name.lower():
     new_file_name += '.pdf'
 
+# put PDFs together
 pdf_cat(input_files, new_file_name)
