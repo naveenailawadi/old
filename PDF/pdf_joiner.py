@@ -39,6 +39,11 @@ input_files = []
 while True:
     new_file = input('Enter a file that you want to join below: \n\
 otherwise, write "I am done") \n')
+    
+    # check for the .pdf in the input
+    if '.pdf' not in new_file.lower():
+        new_file += '.pdf'
+ 
     # create a breaking method
     if "i am done" in new_file.lower():
         break
