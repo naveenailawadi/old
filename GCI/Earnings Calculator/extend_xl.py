@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime as dt
 from EarningsCalculator import calculate_new_cash
 
 '''
@@ -26,10 +27,17 @@ else:
 df = pd.read_excel(filename, headers=0)
 
 
+# get the tickers
+headers = list(df.columns.values)
+tickers_raw = headers[START_COL: END_COL]
+tickers = [ticker.split(' ')[0] for ticker in tickers_raw]
+
 # set the old information to empty (will be updated)
 old_cash = 0
 old_total_fund = 0
 old_investment_list = [0 for i in range(END_COL - START_COL)]
+
+old_date = dt(2000, 1, 1)
 
 # create new columns to add
 outside_investments = []
@@ -40,7 +48,9 @@ for index, row in df.iterrows():
     new_total_fund = row['Total Fund (Cash+Equity)']
     equity = row['Total Equity']
     new_investment_list = row[START_COL: END_COL]
-    new_cash = calculate_new_cash(new_total_fund, equity, old_cash, old_investment_list, new_investment_list)
+
+    new_date = row['Date']
+    new_cash = calculate_new_cash(new_total_fund, equity, old_cash, old_investment_list, new_investment_list, old_date, new_date, tickers)
 
     # calculate the fund difference and profit percentage
     profit = new_total_fund - new_cash - old_total_fund
@@ -56,6 +66,7 @@ for index, row in df.iterrows():
 
     # set the old information to the new information
     old_cash = row['Total Cash']
+    old_date = new_date
     old_total_fund = new_total_fund
     old_investment_list = new_investment_list
 
