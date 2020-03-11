@@ -2,14 +2,6 @@ import pandas as pd
 from datetime import datetime as dt
 from EarningsCalculator import calculate_new_cash
 
-'''
-NOTE:
-- these columns have been hardcoded into the script for simplicity
-- they are just the start column and end column of the equity data
-'''
-START_COL = 16
-END_COL = 192
-
 
 # read in the data
 filename = input('What is the name of the file that you want to read in? \n')
@@ -26,6 +18,9 @@ else:
 # load into a df
 df = pd.read_excel(filename, headers=0)
 
+# these locate the holdings data
+START_COL = df.columns.get_loc(input('What is the title of the first holdings column? \n'))
+END_COL = df.columns.get_loc(input('What is the title of the last holdings column? \n'))
 
 # get the tickers
 headers = list(df.columns.values)
